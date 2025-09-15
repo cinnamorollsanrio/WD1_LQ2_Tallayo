@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'arial', serif;
+  background: white;
+  color: black;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  z-index: 10;
+  margin-right: 20px;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 40px;
+}
+.navbar-center a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 20px;
+}
+.navbar-center a:hover {
+  color: deeppink;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  min-width: 120px;
+}
+.dropdown-content a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.feed {
+  flex: 4;
+}
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.cardheader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.avatar {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+.follow-btn {
+  margin-left: auto;
+  padding: 5px 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.follow-btn:hover {
+  background: #0056b3;
+}
+.post-img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.card-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+.card-actions span:hover {
+  color: #007bff;
+}
+
+.sidebar {
+  flex: 1;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.profile {
+  text-align: center;
+}
+.profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.friends li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+}
+.friends li img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.friends {
+  list-style: none;
+  padding: 0;
+}
+
+.pf {
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.pf img {
+  width: 40px;       /* profile size */
+  height: 40px;
+  border-radius: 50%;
+}
+
+.status {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  font-size: 12px;   /* small circle */
+}
+
+.status.online {
+  color: limegreen;
+}
+
+.status.offline {
+  color: gray;
+}
